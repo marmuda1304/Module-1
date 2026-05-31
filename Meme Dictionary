@@ -1,0 +1,22 @@
+print("Halo! Selamat datang di kamus meme sederhana.")
+print("Ketik kata meme dalam huruf kapital untuk melihat arti singkatnya.")
+print("Kamu bisa mencoba kata seperti CRINGE, LOL, ROFL, SHEESH, CREEPY, atau AGGRO.")
+print("Jika kata tidak ada, kamu akan mendapat pemberitahuan bahwa kata tersebut belum tersedia.")
+print()
+
+meme_dict = {
+    "CRINGE": "Sesuatu yang sangat aneh atau memalukan",
+    "LOL": "Tanggapan umum terhadap sesuatu yang lucu",
+    "ROFL": "Tanggapan terhadap lelucon",
+    "SHEESH": "Sedikit ketidaksetujuan",
+    "CREEPY": "Menakutkan, tidak menyenangkan",
+    "AGGRO": "Untuk menjadi agresif / marah"
+}
+
+for i in range(5):
+    word = input(f"[{i + 1}/5] Ketik kata yang tidak Kamu mengerti (gunakan huruf kapital semua!): ").strip().upper()
+
+    if word in meme_dict:
+        print(f"{word}: {meme_dict[word]}")
+    else:
+        print(f"{word}: Maaf, kata ini tidak ada di kamus.")
