@@ -2,8 +2,13 @@ kata = input("Masukkan sebuah kata: ")
 
 jumlah_vokal = 0
 
+hurufvokal = []
+
 for huruf in kata.lower():
     if huruf in "aiueo":
         jumlah_vokal += 1
+        hurufvokal.append(huruf)
 
 print("Jumlah huruf vokal =", jumlah_vokal)
+print("Huruf-huruf vokal:", hurufvokal)
+print("Kode sukses")
