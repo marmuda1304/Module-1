@@ -13,10 +13,15 @@ meme_dict = {
     "AGGRO": "Untuk menjadi agresif / marah"
 }
 
-for i in range(5):
-    word = input(f"[{i + 1}/5] Ketik kata yang tidak Kamu mengerti (gunakan huruf kapital semua!): ").strip().upper()
+word = input("Ketik kata yang tidak Kamu mengerti (gunakan huruf kapital semua!): ")
 
+for i in range(1, 6):
+    print("Pertanyaan ke-" + str(i) + " dari 5:")
+    word = input("Ketik kata yang tidak Kamu mengerti (gunakan huruf kapital semua!): ")
     if word in meme_dict:
-        print(f"{word}: {meme_dict[word]}")
+        print("Arti dari " + word + ": " + meme_dict[word])
     else:
-        print(f"{word}: Maaf, kata ini tidak ada di kamus.")
+        print("Maaf, kata " + word + " belum tersedia di kamus ini.")
+    print()
+
+print("Terima kasih sudah menggunakan kamus meme!")
