@@ -1,0 +1,6 @@
+teks = input("Masukkan string: ")
+
+if len(teks) > 10:
+    print(teks[:10] + "...")
+else:
+    print(teks)
