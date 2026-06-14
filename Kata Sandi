@@ -1,0 +1,18 @@
+import random
+import string
+
+# Variabel yang berisi semua karakter yang dapat dibuat oleh kata sandi
+karakter = string.ascii_letters + string.digits + string.punctuation
+
+# Minta pengguna untuk memasukkan panjang kata sandi
+panjang_sandi = int(input("Masukkan panjang kata sandi: "))
+
+# Variabel untuk menyimpan kata sandi yang dihasilkan
+kata_sandi_dihasilkan = ""
+
+# Loop untuk memilih karakter acak dan tambahkan ke kata sandi
+for _ in range(panjang_sandi):
+    kata_sandi_dihasilkan += random.choice(karakter)
+
+# Cetak kata sandi yang dihasilkan
+print("Kata sandi yang dihasilkan:", kata_sandi_dihasilkan)
